@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv('dc09e17cd3dfd7bd1b54e8f8857e4396')
+API_KEY = os.getenv('OPENWEATHER_API_KEY')
 WEATHER_BASE_URL = "https://api.openweathermap.org/data/2.5"  # For weather and forecast
 GEO_BASE_URL = "https://api.openweathermap.org/geo/1.0"  # Separate for geocoding
 
@@ -50,4 +50,5 @@ def get_forecast(location):
                 "icon": item['weather'][0]['icon']
             })
         return forecast
+
     return {"error": "API error"}
