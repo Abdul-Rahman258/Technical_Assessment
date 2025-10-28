@@ -1,7 +1,7 @@
 # Weather App (Advanced)
 
 Extended with SQLite DB for CRUD on weather records.
-Optional: YouTube integration, CSV export.
+Optional: YouTube integration(NOT IMPLEMENTED), CSV export.
 
 ## What I Did
 - CRUD: Create (location/date range with validation), Read, Update (location), Delete.
@@ -10,4 +10,5 @@ Optional: YouTube integration, CSV export.
 - Export: CSV.
 
 ## How to Run
+
 (Same as above, but note DB is created automatically.)
