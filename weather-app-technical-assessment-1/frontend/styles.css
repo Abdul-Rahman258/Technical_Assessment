@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#result h2 {
+    color: #007bff;
+}
+
+#result p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#result img {
+    width: 100px;
+    height: 100px;
+}
+
+#info {
+    background-color: #28a745;
+    margin-top: 20px;
+}
+
+#info:hover {
+    background-color: #218838;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Full width on mobile */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    button {
+        width: 100%; /* Full width buttons on mobile */
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    #result {
+        padding: 15px;
+        max-width: 100%; /* Full width on mobile */
+        margin: 10px auto;
+    }
+
+    #result img {
+        width: 80px; /* Slightly smaller icon on mobile */
+        height: 80px;
+    }
+
+    #result p {
+        font-size: 14px; /* Smaller text for better fit */
+    }
+}

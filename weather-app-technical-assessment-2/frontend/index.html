@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App by Abdul Rahman Baig</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Weather App (Advanced)</h1>
+    <input id="location" placeholder="Enter location (city, zip, etc.)">
+    <button onclick="getWeather()">Get Current Weather</button>
+    <button onclick="getForecast()">Get 5-Day Forecast</button>
+    <button onclick="getCurrentLocationWeather()">Use My Location</button>
+
+    <!-- CRUD Section -->
+    <h2>CRUD Operations</h2>
+    <input id="start_date" type="date" placeholder="Start Date (YYYY-MM-DD)">
+    <input id="end_date" type="date" placeholder="End Date (YYYY-MM-DD)">
+    <button onclick="createRecord()">Create Record</button>
+    
+    <button onclick="readRecords()">Read Records</button>
+    
+    <input id="record_id" placeholder="Record ID to Update/Delete">
+    <button onclick="updateRecord()">Update Location</button>
+    <button onclick="deleteRecord()">Delete Record</button>
+
+    <!-- Export Section -->
+    <h2>Data Export</h2>
+    <button onclick="exportCSV()">Export to CSV</button>
+
+    <div id="result"></div>
+    <button id="info">Info</button>
+    <script src="script.js"></script>
+</body>
+</html>
